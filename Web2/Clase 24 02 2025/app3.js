@@ -2,7 +2,7 @@
 function saludar(){
     console.log('Hola Mundo');
 }
-despedida('Miamorherosoqueamotantocontodomicorazon<33333');
+despedida('adios');
 function despedida(nombre){
     console.log('Chau '+nombre);
 
