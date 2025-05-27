@@ -16,8 +16,8 @@ app.set('views', path.join(__dirname, 'views'));
 
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'Allthread1.',
+    user: 'ari',
+    password: 'gochi27',
     database: 'node_crude',
     port: 3306
 });
