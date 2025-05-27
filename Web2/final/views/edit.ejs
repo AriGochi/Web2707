@@ -5,19 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Usuario</title>
     <link rel="stylesheet" href="/Estilos.css">
-    <style>
-        h2 {
-            margin-top: 30px;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        a {
-            margin-top: 10px;
-        }
-    </style>
 </head>
-<body>
+<body class="edit-page">
     <h2>Editar Usuario</h2>
     <form action="/update/<%= usuario.id %>" method="post">
         <label for="name">Nombre:</label>
