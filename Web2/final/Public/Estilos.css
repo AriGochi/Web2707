@@ -1,29 +1,67 @@
-/* Public/Estilos.css */
-
 body {
-    font-family: 'Inter', sans-serif; /* Usando Inter según las directrices */
+    font-family: 'Inter', sans-serif;
     background-color: #f0f2f5;
     color: #333;
     margin: 20px;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 95vh;
+    gap: 30px;
 }
-p {
-    font-size: 1.5em;
-    color: #0056b3;
+
+body.edit-page {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    gap: 15px;
+}
+
+body.edit-page h2 {
     margin-bottom: 20px;
 }
+
+body.edit-page form {
+    margin-bottom: 0;
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+body.edit-page a {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+}
+
+
+p {
+    font-size: 1.5em;
+    color: #FF69B4;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
 table {
-    width: 80%;
+    width: 45%;
     border-collapse: collapse;
     margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden; /* Asegura que las esquinas redondeadas se apliquen al contenido */
+    overflow: hidden;
+    min-width: 300px;
 }
 th, td {
     border: 1px solid #ddd;
@@ -31,36 +69,41 @@ th, td {
     text-align: left;
 }
 th {
-    background-color: #007bff;
+    background-color: #3CB371;
     color: white;
     font-weight: bold;
 }
 tr:nth-child(even) {
-    background-color: #f8f8f8;
+    background-color: #FDF5E6;
 }
 tr:hover {
-    background-color: #e9ecef;
+    background-color: #E0FFE0;
 }
 a {
-    color: #007bff;
+    color: #FF69B4;
     text-decoration: none;
     margin-right: 10px;
     transition: color 0.3s ease;
 }
 a:hover {
-    color: #0056b3;
+    color: #C71585;
     text-decoration: underline;
 }
+
 form {
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 45%;
     max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    min-width: 300px;
+}
+form h2 {
+    color: #3CB371;
 }
 label {
     font-weight: bold;
@@ -68,21 +111,21 @@ label {
 }
 input[type="text"],
 input[type="email"] {
-    width: calc(100% - 20px); /* Ajustar para el padding */
+    width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    box-sizing: border-box; /* Incluir padding en el ancho */
+    box-sizing: border-box;
 }
 input[type="text"]:focus,
 input[type="email"]:focus {
-    border-color: #007bff;
+    border-color: #3CB371;
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 5px rgba(60, 179, 113, 0.25);
 }
 button[type="submit"] {
-    background-color: #28a745;
+    background-color: #FF69B4;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -90,23 +133,23 @@ button[type="submit"] {
     cursor: pointer;
     font-size: 1.1em;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    align-self: flex-start; /* Alinear botón al inicio del formulario */
+    align-self: flex-start;
 }
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #C71585;
     transform: translateY(-2px);
 }
 
-/* Ajustes responsivos */
 @media (max-width: 768px) {
     table, form {
         width: 95%;
+        margin-bottom: 20px;
     }
-    th, td {
-        padding: 8px 10px;
-    }
-    a {
-        margin-right: 5px;
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        gap: 20px;
     }
 }
 
